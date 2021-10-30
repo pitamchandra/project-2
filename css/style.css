@@ -1,0 +1,776 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+a, a:hover{
+	text-decoration: none;
+}
+
+body{
+	font-family: 'Open Sans', sans-serif;
+}
+h1,h2,h3,h4,h5,h6{
+	font-family: 'Montserrat', sans-serif;
+}
+ul{
+	margin-bottom: 0;
+}
+
+/******** global css code start ***********/
+.gap{
+	padding: 80px 0;
+}
+.col-mt{
+	margin-top: 20px;
+}
+.form-select:focus{
+	border-color: #999;
+    outline: 0;
+    box-shadow: none;
+
+}
+
+
+
+
+/******** global css code end ***********/
+
+/******** banner css code start ***********/
+.banner{
+	width: 100%;
+	background: url(../img/banner.jpg) center center no-repeat;
+	background-size: cover;
+}
+.bg-light{
+	background: rgba(0, 0, 0, .5) !important;
+}
+
+.navbar{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 25px 0;
+	z-index: 9999;
+}
+.navbar-brand{
+	width: 50%;
+}
+.navbar-brand img{
+	width: 25%;
+}
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link{
+	color: #fff;
+}
+.navbar-light .navbar-nav .nav-link{
+	font-size: 12px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
+	text-transform: uppercase;
+	color: #fff;
+	padding: 5px 0px;
+	margin: 5px 15px;
+
+}
+.navbar-light .navbar-nav .nav-link:hover{
+	color: #F53936;
+}
+
+.navbar-light .navbar-nav .nav-link::after{
+	content: "";
+	width: 0%;
+	height: 2px;
+	background: #fff;
+	display: block;
+	transition: .5s;
+	margin: auto;
+}
+.navbar-light .navbar-nav .nav-link.active::after{
+	width: 100%;
+	
+}
+.navbar-light .navbar-nav .nav-link:hover::after{
+	width: 100%;
+	background: #F53936;
+}
+.btn-info {
+    color: #fff;
+    background-color: #F53936;
+    border-color: #F53936;
+    margin-left: 35px;
+    border-radius: 0;
+    padding: 8px 20px;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 700;
+    transition: .5s;
+}
+.btn-info:hover{
+	color: #fff;
+    background-color: #C32622;
+    border-color: #C32622;
+}
+
+.banner-inner{
+	padding: 230px 0;
+}
+.banner-inner p{
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 24px;
+	color: #fff;
+	margin-bottom: 0;
+}
+.banner-inner h1{
+	font-size: 60px;
+	font-weight: 700;
+	line-height: 66px;
+	font-family: roboto slab;
+	color: #fff;
+}
+.banner-inner h5{
+	font-size: 20px;
+	font-weight: 400;
+	font-family: 'Open Sans', sans-serif;
+	line-height: 26px;
+	color: #fff;
+}
+.banner-inner h5 code{
+	color: #F53936;
+    margin-left: 10px;
+    font-size: 22px;
+}
+.banner-inner a{
+	font-size: 14px;
+	font-weight: 700;
+	font-family: 'Open Sans', sans-serif;
+	line-height: 20px;
+	color: #fff;
+}
+.banner-inner a i{
+	font-size: 28px;
+    line-height: 64px;
+    margin-right: 10px;
+}
+/******** banner css code end ***********/
+/******** booking css code start ***********/
+
+.booking{
+	width: 100%;
+	background: #F7F7F7;
+	padding-bottom: 80px;
+}
+.booking-form{
+	width: 100%;
+	background: #fff;
+	padding: 50px;
+	margin-top: -15px;
+	margin-bottom: 20px;
+}
+.main-form>.row>.col-md-6{
+	padding: 0;
+}
+.booking-form label{
+	color: #2c3966;
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 20px;
+	margin-bottom: 5px;
+	margin-top: 15px;
+}
+.booking-form select{
+	font-size: 14px;
+	color: #999;
+	border-radius: 0;
+	text-transform: capitalize;
+}
+.booking-form .btn-info{
+	background: #303968;
+    border-color: #303968;
+    margin-top: 36px;
+    padding: 8px 43px;
+}
+.booking-inner{
+	width: 100%;
+	background: #F53936;
+}
+.booking-inner img{
+	width: 100%;
+	transition: .5s;
+}
+.booking-inner img:hover{
+	opacity: .8;
+}
+.booking-inner h3{
+	font-size: 24px;
+	font-weight: 400;
+	line-height: 24px;
+	color: #fff;
+}
+.booking-inner p{
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 24px;
+	color: #fff;
+	text-align: right;
+}
+.booking-border{
+	padding: 50px 20px;
+}
+.booking-inner ul{
+	display: block;
+	text-align: right;
+	border-top: 1px solid red;
+	padding-top: 10px;
+}
+.booking-inner ul li{
+	display: inline;
+	margin: right;
+	font-size: 14px;
+	color: #fff;
+	margin-right: 20px;
+}
+.booking-item{
+	background: #fff;
+}
+.booking-item img{
+	margin-bottom: 15px;
+	transition: .5s;
+}
+.booking-item img:hover{
+	opacity: .8;
+}
+.booking-item h3{
+	font-size: 16px;
+	margin-left: 10px;
+	color: #000;
+}
+.booking-item p{
+	font-size: 14px;
+	margin-right: 10px;
+	color: #000;
+}
+.booking-item ul{
+	border-top: 0px;
+	padding-top: 0px;
+}
+.booking-item ul li{
+	font-size: 12px;
+	color: #000;
+	margin-right: 10px;
+}
+
+
+/******** booking css code end ***********/
+
+/******** featured css code start ***********/
+
+
+.featured{
+	width: 100%;
+	background: #999999;
+}
+.featured h2{
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 24px;
+	font-family: roboto slab;
+	text-transform: uppercase;
+	color: #fff;
+	text-align: center;
+	margin-bottom: 50px;
+}
+.featured-inner{
+	background: #999;
+}
+.featured-inner h3{
+	font-size: 14px;
+	margin-left: 8px;
+	color: #fff;
+}
+.featured-inner p{
+	font-size: 12px;
+	margin-right: 8px;
+	color: #fff;
+}
+.featured-inner ul li{
+	font-size: 10px;
+	color: #fff;
+	margin-right: 6px;
+}
+.owl-carousel .owl-nav button.owl-prev{
+    position: absolute;
+    top: 50%;
+    left: -35px;
+    font-size: 53px;
+    transform: translatey(-50%);
+}
+.owl-carousel .owl-nav button.owl-next{
+    position: absolute;
+    top: 50%;
+    right: -35px;
+    font-size: 53px;
+    transform: translatey(-50%);
+}
+
+
+
+/******** featured css code end ***********/
+
+/******** leatest css code start ***********/
+
+.leatest{
+	width: 100%;
+	background: #fff;
+}
+.leatest .row{
+	margin: 0;
+}
+.leatest .row .col-md-3{
+	margin: 0;
+	padding: 0;
+}
+.leatest h2{
+	font-size: 30px;
+	font-weight: 500;
+	line-height: 36px;
+	margin-bottom: 40px;
+}
+.leatest h2 span{
+	color: #ff6600;
+}
+.leatest-inner{
+	width: 100%;
+	position: relative;
+	background: #000;
+}
+.leatest-inner img{
+	width: 100%;
+	opacity: .6;
+	transition: .5s;
+}
+.leatest-inner:hover img{
+	opacity: .9;
+}
+.leatest-text{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	text-align: center;
+}
+.leatest-text h3{
+	font-size: 20px;
+	line-height: 26px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	color: #fff;
+	margin-bottom: 10px;
+}
+.leatest-text p{
+	font-size: 16px;
+	line-height: 22px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	color: #fff;
+}
+
+/******** leatest css code end ***********/
+
+/******** lexus css code start ***********/
+.lexus{
+	width: 100%;
+	background: #fff;
+	padding-bottom: 50px;
+}
+.lexus-inner h3{
+	font-size: 30px;
+	line-height: 36px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	color: #000;
+	margin-bottom: 10px;
+}
+.lexus-inner p{
+	font-size: 17px;
+	line-height: 22px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	color: #333;
+}
+.lexus-item h2{
+	font-size: 28px;
+	line-height: 32px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	color: #333;
+}
+.lexus-item p{
+	font-size: 14px;
+	line-height: 20px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	color: #000;
+}
+.lexus-item-1{
+	text-align: right;
+	padding: 10px 20px;
+}
+.lexus-item-2{
+	border-left: 2px solid #ddd;
+	padding: 10px 20px;
+}
+/******** lexus css code end ***********/
+
+
+/******** footer css code end ***********/
+
+.footer{
+	width: 100%;
+	background: #F0F3F5;
+}
+.footer-link{
+	padding-right: 50px;
+}
+.footer-link img{
+	width: 100%;
+	margin-bottom: 20px;
+}
+.footer-link a{
+	font-size: 14px;
+	font-weight: 600;
+	color: #000;
+	margin-right: 10px;
+}
+.footer-link a:hover{
+	color: #F53936;
+}
+.footer-inner h3{
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 40px;
+	text-transform: uppercase;
+	color: #0c0c0c;
+}
+.footer-inner li{
+	list-style: none;
+	display: block;
+}
+.footer-inner li a{
+	font-size: 14px;
+	line-height: 30px;
+	color: #555;
+}
+.footer-inner li a:hover{
+	color: #F53936;
+}
+.footer>.container>.row{
+	padding-bottom: 50px;
+	border-bottom: 1px solid #ddd;
+}
+
+
+.copyright{
+	padding-top: 50px;
+}
+.social-icons a{
+	font-size: 18px;
+	color: #000;
+}
+.social-icons a i{
+
+	margin-right: 40px;
+}
+.copyright p{
+	text-align: right;
+	font-size: 12px;
+	color: #333;
+}
+
+
+
+/******** footer css code end ***********/
+
+.scrollup{
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	color: #fff;
+	background: #F53936;
+	border-color: #F53936;
+}
+
+.navbar-bg{
+	padding: 5px 0;
+	background: rgba(0, 0, 0, .8) !important;
+}
+
+
+/*************** media query css start  ***********************/
+
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+	.navbar-brand img {
+	    width: 75%;
+	}
+	.navbar-light .navbar-toggler{
+		background: #F53936;
+	}
+	.banner-inner p{
+		margin-bottom: 10px;
+	}
+	.banner-inner h1{
+		font-size: 40px;
+		line-height: 46px;
+	}
+	.banner-inner a i{
+		font-size: 20px;
+	}
+	.btn-info{
+		margin-left: 0;
+		text-align: center;
+	}
+	.booking-border {
+	    padding: 15px 20px;
+	}
+	.booking-inner p{
+		text-align: left;
+		margin-bottom: 0px;
+	}
+	.booking-inner ul{
+		text-align: left;
+		padding: 10px 20px;
+	}
+	.booking-item{
+		margin-top: 20px;
+	}
+	.booking-item h3{
+		font-size: 20px;
+	}
+	.booking-item p{
+		margin-left: 10px;
+	}
+	.booking-item ul{
+		padding-left: 10px;
+	}
+	.owl-carousel .owl-nav button.owl-prev{
+		left: 0;
+		color: #fff;
+	}
+	.owl-carousel .owl-nav button.owl-next{
+		right: 0;
+		color: #fff;
+
+	}
+	.featured-inner>.row>.col-md-6{
+		width: 50%;
+	}
+	.featured-inner p{
+		font-size: 16px;
+		text-align: right;
+		padding-right: 10px;
+	}
+	.leatest h2{
+		font-size: 19px;
+	    line-height: 26px;
+	    margin-bottom: 20px;
+	}
+
+	.for-mobile{
+		width: 50%;
+	}
+	.lexus-item{
+		margin-top: 20px;
+	}
+	.lexus-item-1{
+		text-align: left;
+		padding: 0px;
+	}
+	.footer-link img{
+		width: 70%;
+	}
+	.footer-inner h3{
+		font-size: 14px;
+		margin-top: 20px;
+		line-height: 22px;
+	}
+	.social-icons{
+		text-align: center;
+	}
+	.social-icons a i{
+		margin: 0px 10px;
+	}
+	.copyright p{
+		text-align: center;
+		line-height: 26px;
+		margin-top: 10px;
+	}
+
+
+}
+
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+
+
+	.navbar-brand img {
+	    width: 75%;
+	}
+	.navbar-light .navbar-toggler{
+		background: #F53936;
+	}
+	.banner-inner p{
+		margin-bottom: 10px;
+	}
+	.banner-inner h1{
+		font-size: 48px;
+		line-height: 56px;
+	}
+	.banner-inner a i{
+		font-size: 20px;
+	}
+	.btn-info{
+		margin-left: 0;
+		text-align: center;
+	}
+	.booking-border {
+	    padding: 15px 20px;
+	}
+	.booking-inner p{
+		text-align: left;
+		margin-bottom: 0px;
+	}
+	.booking-inner ul{
+		text-align: left;
+		padding: 10px 20px;
+	}
+	.booking-item{
+		margin-top: 20px;
+	}
+	.booking-item h3{
+		font-size: 20px;
+	}
+	.booking-item p{
+		margin-left: 10px;
+	}
+	.booking-item ul{
+		padding-left: 10px;
+	}
+	.owl-carousel .owl-nav button.owl-prev{
+		left: 0;
+		color: #fff;
+	}
+	.owl-carousel .owl-nav button.owl-next{
+		right: 0;
+		color: #fff;
+
+	}
+	.featured-inner>.row>.col-md-6{
+		width: 50%;
+	}
+	.featured-inner p{
+		font-size: 16px;
+		text-align: right;
+		padding-right: 10px;
+	}
+	.leatest h2{
+		font-size: 24px;
+	  line-height: 30px;
+	  margin-bottom: 20px;
+	}
+	.leatest-text h3{
+		font-size: 30px;
+		line-height: 36px;
+	}
+	.for-mobile{
+		width: 50%;
+	}
+	.lexus-item{
+		margin-top: 20px;
+	}
+	.lexus-item-1{
+		text-align: left;
+		padding: 0px;
+	}
+	.footer-link img{
+		width: 70%;
+	}
+	.footer-inner h3{
+		font-size: 16px;
+		margin-top: 20px;
+		line-height: 24px;
+	}
+	.social-icons{
+		text-align: center;
+	}
+	.social-icons a i{
+		margin: 0px 10px;
+	}
+	.copyright p{
+		text-align: center;
+		line-height: 26px;
+		margin-top: 10px;
+	}
+
+
+}
+
+
+
+/* 
+  ##Device = Tablets, Ipads   ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+	.navbar-brand img {
+	    width: 75%;
+	}
+	.navbar-light .navbar-toggler{
+		background: #F53936;
+	}
+	.navbar-nav{
+		margin-top: 20px;
+	}
+	.btn-info{
+		margin-left: 0;
+	}
+	.booking-form .btn-info{
+		font-size: 12px;
+		padding: 10px 15px;
+	}
+	.lexus>.container>.row>.col-md-8 , .lexus>.container>.row>.col-md-4{
+		width: 100%;
+	}
+	.lexus-item{
+		text-align: center;
+	}
+	.for-mobile{
+		width: 50%;
+	}
+	.footer>.container>.row>.col-md-4{
+		width: 100%;
+	}
+	.footer-inner h3{
+		font-size: 16px;
+		margin-top: 20px;
+		line-height: 24px;
+	}
+
+  
+}
+
+
+
