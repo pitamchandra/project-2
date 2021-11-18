@@ -53,6 +53,7 @@ ul{
 	width: 100%;
 	padding: 25px 0;
 	z-index: 9999;
+	transition: .5s;
 }
 .navbar-brand{
 	width: 50%;
